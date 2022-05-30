@@ -1,0 +1,77 @@
+@import "css/page.css";
+@import "css/tab.css";
+
+:root{
+    --c-white:white;
+    --c-white-light: #C2CFE0; /*border*/
+    --c-white-pink:#F5F5F5; /*background tab*/
+    --c-blue-dark:#334D6E;  /*navbar*/
+    --c-green:#00693B;  /*background active*/
+}
+
+
+@font-face {
+    font-family: Roboto;
+    src: url('font/roboto-normal.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('font/roboto-bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('font/roboto-500.ttf') format('truetype');
+    font-weight: 500;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+button:hover , select:hover{
+    cursor: pointer;
+}
+
+.clear{
+    clear: both;
+    display: inline-block;
+}
+
+input , button , select {
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+._container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+._overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
